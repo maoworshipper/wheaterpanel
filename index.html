@@ -10,15 +10,17 @@
 <body>
     <div class="container">
 
-        <section class="header">
-            <div class="icono">
-                <img src="" class="imagen" />
-                <span class="descripcion"></span>
-            </div>
-            <span class="temperatura"></span>
+        <div class="principal">
+        <div class="icono">
+            <i class="imagen"></i>
+            <span class="descripcion"></span>
+        </div>
+        <span class="temperatura"></span>
+        </div>
 
+        <section class="header">
             <div class="city">
-                Bogotá
+                <i class="fa fa-map-marker-alt"></i> Bogotá
             </div>
         </section>
 
@@ -35,46 +37,38 @@
             <div class="column">
             <h3>Place to <span>Visit</span></h3>
             <!--Place to visit-->
-            <div class="placetovisit">
-
+            <div class="places placetovisit">
+                <i class="fa fa-map-marker-alt"></i><h4>Arab Street Singapore</h4>
             </div>
             </div>
 
             <!--Other widgets-->
-            <div class="column">
-            <div class="reviews"></div>
-
-            <div class="place">
-
+            <div class="column others">
+                <div class="row reviews">
+                    <i class="fa fa-plus"></i>
+                    <h3> Top Reviews</h3>
+                    <img src="assets/img/foto.jpg" class="image-review" alt="review1">
+                    <img src="assets/img/foto2.jpg" class="image-review"  alt="review1">
+                    <img src="assets/img/foto3.jpg" class="image-review"  alt="review1">
+                    <div class="image-review more-reviews"><span>9+</span></div>
+                </div>
+            
+            <div class="places place">
+                <i class="fa fa-map-marker-alt"></i><h4>Art Sciense Museum</h4>
             </div>
 
-            <div class="placewithlink">
-
+            <div class="places placewithlink">
+                <i class="fa fa-map-marker-alt"></i><h4>Fountain of Health</h4>
             </div>
             </div>
 
             <!--Other cities-->
-            <div class="column" id="cities">
-                <!--<div class="card" id="card-paris">
-                    <div class="row">
-                        <div class="card-icon">
-                            <img src="" alt="">
-                        </div>
-                        <div class="card-temperatura"></div>
-                        <div class="card-lugar"></div>
-                    </div>
-                    <div class="row">
-                        <div class="humidity"></div>
-                        <div class="wind"></div>
-                        <div class="velocity"></div>
-                    </div>
-                </div>-->
-            </div>
+            <div class="column cities" id="cities"></div>
 
         </section>
 
     </div>
-
+    <script src="https://kit.fontawesome.com/0f99afb3ef.js" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
