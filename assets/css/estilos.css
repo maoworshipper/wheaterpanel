@@ -14,14 +14,24 @@ body {
   padding: 30px 40px 70px;
   background: #fff;
   border-radius: 2em; }
+  @media screen and (max-width: 767px) {
+    .container {
+      width: 78%; } }
 
 .row {
   display: flex;
   flex-direction: row; }
+  @media screen and (max-width: 767px) {
+    .row {
+      width: 100%;
+      flex-wrap: wrap; } }
 
 .column {
   display: flex;
   flex-direction: column; }
+  @media screen and (max-width: 767px) {
+    .column {
+      width: 100%; } }
 
 h3 {
   font-size: 1.7em;
@@ -73,6 +83,9 @@ h3 {
   min-height: 300px;
   margin-top: -200px;
   padding: 50px 150px; }
+  @media screen and (max-width: 767px) {
+    .header {
+      padding: 2em 1em 1em 5.2em; } }
   .header .city {
     color: #7D68E9;
     font-size: 2em;
@@ -88,10 +101,19 @@ h3 {
   margin-top: 1em;
   /* Singapore Widget */
   /* Cities Cards */ }
+  @media screen and (max-width: 767px) {
+    .widgets {
+      flex-wrap: wrap; } }
   .widgets .column {
     width: 23%; }
+    @media screen and (max-width: 767px) {
+      .widgets .column {
+        width: 100%; } }
   .widgets .column:last-child {
     width: 31%; }
+    @media screen and (max-width: 767px) {
+      .widgets .column:last-child {
+        width: 100%; } }
   .widgets .dayforecast {
     display: flex;
     border: 1px solid #CFD8DC;
@@ -139,6 +161,9 @@ h3 {
     color: #fff;
     cursor: pointer;
     transition: all .5s ease; }
+    @media screen and (max-width: 767px) {
+      .widgets .places {
+        height: 150px; } }
     .widgets .places:hover {
       transform: scale(1.02); }
     .widgets .places h4 {
@@ -178,6 +203,9 @@ h3 {
   .widgets .cities {
     margin: -120px 35px 0 0;
     z-index: 15; }
+    @media screen and (max-width: 767px) {
+      .widgets .cities {
+        margin: 0; } }
     .widgets .cities .card {
       width: 100%;
       background: #fff;
@@ -191,6 +219,9 @@ h3 {
         column-gap: 15px;
         align-items: center;
         justify-content: space-between; }
+        @media screen and (max-width: 767px) {
+          .widgets .cities .card .row {
+            justify-content: unset; } }
         .widgets .cities .card .row .card-icon {
           background: #DCE8F4;
           border-radius: 1em;
@@ -203,6 +234,9 @@ h3 {
           font-size: 2.6em;
           align-self: center;
           text-align: center; }
+          @media screen and (max-width: 767px) {
+            .widgets .cities .card .row .card-temperatura {
+              width: unset; } }
           .widgets .cities .card .row .card-temperatura span {
             font-family: 'Roboto', sans-serif;
             font-size: 0.5em;
@@ -212,6 +246,9 @@ h3 {
         .widgets .cities .card .row .card-lugar {
           width: 40%;
           font-weight: 700; }
+          @media screen and (max-width: 767px) {
+            .widgets .cities .card .row .card-lugar {
+              width: unset; } }
         .widgets .cities .card .row .humidity, .widgets .cities .card .row .wind, .widgets .cities .card .row .velocity {
           width: 33.33%;
           text-align: center;

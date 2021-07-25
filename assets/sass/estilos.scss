@@ -18,16 +18,29 @@ body{
     background: $blanco;
     border-radius: 2em;
     @extend .shadow;
+
+    @media screen and (max-width: $break-medium) {
+        width: 78%;
+    }
 }
 
 .row{
     display: flex;
     flex-direction: row;
+
+    @media screen and (max-width: $break-medium) {
+        width: 100%;
+        flex-wrap: wrap;
+    }
 }
 
 .column{
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: $break-medium) {
+        width: 100%;
+    }
 }
 
 h3{
@@ -94,6 +107,10 @@ h3{
     margin-top: -200px;
     padding: 50px 150px;
 
+    @media screen and (max-width: $break-medium) {
+        padding: 2em 1em 1em 5.2em;
+    }
+
     .city{
         color: $secondary;
         font-size: 2em;
@@ -113,12 +130,24 @@ h3{
     width: 100%;
     margin-top: 1em;
 
+    @media screen and (max-width: $break-medium) {
+        flex-wrap: wrap;
+    }
+
     .column{
         width: 23%;
+
+        @media screen and (max-width: $break-medium) {
+            width: 100%;
+        }
     }
 
     .column:last-child{
         width: 31%;
+
+        @media screen and (max-width: $break-medium) {
+            width: 100%;
+        }
     }
 
     .dayforecast{
@@ -186,6 +215,10 @@ h3{
         cursor: pointer;
         transition: all .5s ease;
 
+        @media screen and (max-width: $break-medium) {
+            height: 150px;
+        }
+
         &:hover{
             transform: scale(1.02);
         }
@@ -250,6 +283,10 @@ h3{
         margin: -120px 35px 0 0;    
         z-index: 15;
 
+        @media screen and (max-width: $break-medium) {
+            margin: 0;
+        }
+
     .card{
         width: 100%;
         background: $blanco;
@@ -267,6 +304,10 @@ h3{
         column-gap: 15px;
         align-items: center;
         justify-content: space-between;
+
+        @media screen and (max-width: $break-medium) {
+            justify-content: unset;
+        }
 
     .card-icon{
         background: $cian;
@@ -286,6 +327,10 @@ h3{
         align-self: center;
         text-align: center;
 
+        @media screen and (max-width: $break-medium) {
+            width: unset;
+        }
+
         span{
             font-family: 'Roboto', sans-serif;
             font-size: 0.5em;
@@ -298,6 +343,10 @@ h3{
     .card-lugar{
         width: 40%;
         font-weight: 700;
+
+        @media screen and (max-width: $break-medium) {
+            width: unset;
+        }
     }
 
     .humidity, .wind, .velocity{
